@@ -60,6 +60,17 @@ body
   
 }
 
+i
+{
+    width: 20px;
+}
+
+*
+{
+    padding:0;
+    margin: 0;
+}
+
 header
 {
     display:flex;
@@ -131,10 +142,6 @@ nav li
 
 }
 
-.icons_partie3
-{
-    width: 20px;
-}
 .info
 {
     width: 100%;
@@ -145,47 +152,47 @@ nav li
     align-content: space-around;
 }
 
-.icons_info
-{
-    width: 20px;
-}
 
 .hebergements_populaires
 {
-    display:flex;
+    display: flex;
     justify-self: space-between;
     justify-content: space-between;
     align-items: flex-start; 
-    block-size: 30%;
+    block-size: 100%;
 }
-   
-.hebergements_populaires img
-{
-    width: 200px;
-    height: 125px;
-}
+
+justify-self: space-between;
+justify-content: space-between;
+align-items: flex-start; 
+block-size: 30%;
+
 
 /* Hébergements à Marseille */
 .hebergements
 {
-    padding : 12px; 
+    background-color: #F2F2F2;
+    display: flex; 
+    flex-wrap: wrap;
     margin: 12px;
     border-radius: 20px / 20px;
-    display: flex;
-    flex-direction: row;
+    max-width: 10%;
+    min-width: 5%;
 }
 
-.hebergements2
+.hebergements img
 {
-    border: collapse;
-    background-color: #F2F2F2;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
 }
 
-td
+.hebergements figure
 {
- border: 1px solid black;
+    border: 2px solid red;
+    border-radius: 20px 20px;
+    width: 35%; 
 }
 
 /* Les plus populaires */
@@ -195,12 +202,17 @@ td
     padding : 12px; 
     margin: 12px;
     border-radius: 20px / 20px; 
+    width: 30%;
+    height: 60%;
 }
 
-.icons_populaires
+
+.les_plus_populaires img
 {
-    width: 20px;
+    width: 200px;
+    height: 125px;
 }
+
 
 /* Activités*/
 .activites
