@@ -1,0 +1,228 @@
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* page entière */
+body
+{
+    font-size: 1em;
+    font-family: 'ralewaylight','ralewayregular', 'ralewaybold', 'ralewayextrabold','ralewaysemibold', 'ralewaymedium',serif;
+    margin: auto;
+    width: 1000px;
+  
+}
+
+header
+{
+    display:flex;
+    justify-self: space-between;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* En-tête / Logo */
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100px;
+    height: 50px;
+}
+
+ul /* nav */
+{
+    list-style-type: none;
+    width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: #0065FC;
+    text-decoration: none;
+    text-align: right;
+}
+
+nav li
+{
+    margin-right: 10%;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/* En-tête */
+.Trouvez_votre_hebergement
+{
+    font-size: 1.3em;
+    font-family: 'ralewaysemibold';
+
+}
+
+.rechercher
+{
+    width: 20px;
+}
+
+.main 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtres
+{
+    width: 1000px;
+    font-size: 1.2em;
+    font-family: 'ralewaysemibold';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.icons_partie3
+{
+    width: 20px;
+}
+.info
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.icons_info
+{
+    width: 20px;
+}
+
+.hebergements_populaires
+{
+    display:flex;
+    justify-self: space-between;
+    justify-content: space-between;
+    align-items: flex-start; 
+    block-size: 30%;
+}
+   
+.hebergements_populaires img
+{
+    width: 200px;
+    height: 125px;
+}
+
+/* Hébergements à Marseille */
+.hebergements
+{
+    padding : 12px; 
+    margin: 12px;
+    border-radius: 20px / 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergements2
+{
+    border: collapse;
+    background-color: #F2F2F2;
+    width: 100px;
+    height: 100px;
+}
+
+td
+{
+ border: 1px solid black;
+}
+
+/* Les plus populaires */
+.les_plus_populaires
+{
+    background-color: #F2F2F2;
+    padding : 12px; 
+    margin: 12px;
+    border-radius: 20px / 20px; 
+}
+
+.icons_populaires
+{
+    width: 20px;
+}
+
+/* Activités*/
+.activites
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.activites img
+{
+    width: 200px;
+    height: 125px;
+}
+
+/* Pied de page */
+footer
+{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
