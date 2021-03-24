@@ -65,6 +65,11 @@ body
     margin: 0;
 }
 
+.bold /* in bold */
+{
+    font-family: 'ralewaysemibold', 'ralewaylight',serif;
+}
+
 .main /* the whole page without the header and footer */
 {
     width: auto;
@@ -259,6 +264,7 @@ form .research /* includes the free field for the search + the button with writt
 #filtres
 {
     display: flex;
+    flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: baseline;
@@ -276,6 +282,15 @@ form .research /* includes the free field for the search + the button with writt
 {
     font-size: 1em;
     font-weight: lighter;
+}
+
+.filtres_part1
+{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 20px;
+    
 }
 
 .filtre
@@ -787,6 +802,12 @@ form i
     height: 90px;
 }
 
+#hebergements_marseille h2
+{
+    padding-left: 15px;
+}
+}
+
 /* les plus populaires 2nd part - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
 .les_plus_populaires
 {
@@ -813,6 +834,7 @@ form i
 .entetepop 
 {
     margin-bottom: 40px;
+    padding-left: 25px;
 }
 
 /* Activités à Marseille - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
@@ -919,7 +941,6 @@ footer
 }
 
 }
-
 /*----------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
@@ -944,7 +965,7 @@ main
 
 /* Nav- RESPONSIVE DESIGN TABLET / LANDSCAPE LAYOUT */
 
-/*nav ul/* nav */
+/*nav ul
 {
     list-style-type: none;
     width: 300px;
@@ -994,9 +1015,7 @@ a[href^="#activites"]:hover /* change appaerance on hover*/
 --------------------RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT--------------------------------------------*/
 
 @media all and (orientation:portrait) and (min-device-width: 768px) and (max-device-width: 1024px)
-
 {
-
 body
 {
     width: 100%;
