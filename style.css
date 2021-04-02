@@ -70,6 +70,11 @@ body
     font-family: 'ralewaysemibold', 'ralewaylight',serif;
 }
 
+span
+{
+    font-family: 'ralewaysemibold', 'ralewaylight',serif;
+}
+
 .main /* the whole page without the header and footer */
 {
     width: auto;
@@ -231,7 +236,6 @@ form .research /* includes the free field for the search + the button with writt
 
 #free_search
 {
-    background-color: none;
     color:black;
     width: 170px;
     height: 100%;
@@ -344,11 +348,15 @@ form .research /* includes the free field for the search + the button with writt
 
 #info i
 {
-    background-color: #0065FC;
-    color: white;
+    background-color: white;
+    color: #0065FC;
     border: 1px solid #F2F2F2;
-    border-radius: 20px;
+    border-radius: 10px;
+    font-size: 0.6em;
+    padding: 5px 5px 5px 5px;
+    /*height: auto;*/
     width: auto;
+    
 }
     
 /*Contents - gather "hebergements à Marseille" and "les plus populaires" */
@@ -663,42 +671,399 @@ footer h3
 
 @viewport
 {
-    width: device-width;
+   
     zoom: 1;
 }
 
 /*----------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
---------------------RESPONSIVE DESIGN DESKTOPS AND LAPTOPS------------------------------------------------*/
+--------------------RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN------------------------------------------------*/
 
-@media all and (min-device-width: 1224px)
+@media all and (min-width: 2151px)
 {
 
 body 
 {
-    width: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-size: 1.2em;
-    
+    font-size: 1.5em;
 }
 
-/*all the page without header and footer - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */ 
+
+/*all the page without header and footer - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */
+main
+{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* header (Logo + Nav) - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */
+header 
+{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#logo 
+{
+    width: 10%;
+    height: 18%;
+}
+
+/* Nav (=menu) - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */ 
+nav ul 
+{
+    width: 600px;
+    height: 100px;
+}
+
+/* Form -RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */ 
+form 
+{
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+    width: 80%;
+}
+
+form i 
+{
+    padding-top: 25px;
+    padding-bottom: 28px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#free_search
+{
+    width: 60%;
+    padding: 25px 50px 25px 50px;
+}
+
+#button_search 
+{
+    width: 40%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Filters - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN*/ 
+#filtres
+{
+ width: 80%;
+ height: 50%;
+ margin-bottom: 2%;
+}
+
+.filtre 
+{
+    height: 60px;
+    padding-right: 30px;
+}
+
+.filtre i 
+{
+    padding: 20px 18px 10px 18px;
+    margin-top: -2px;
+}
+
+/* Info part (icon i + info sentence) - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */ 
+#info i 
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    padding: 8px 12px 15px 12px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+
+#info
+{
+    align-items: baseline;
+}
+
+/*hebergement à Marseille 1st part - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN */
+.hebergements_populaires
+{
+    font-size: 1.2em;
+}
+
+#hebergements_marseille
+{
+    width: 80%; 
+    height: 60%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hebergements_marseille figure 
+{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 30px;
+    margin-top: 0px; 
+}
+
+#hebergements_marseille h2
+{
+    margin-bottom: 3%;
+}
+
+#hebergements_marseille img 
+{
+    width: 100%;
+    height: 60%;
+}
+
+#hebergements_marseille figcaption
+{
+    width: 100%;
+    height: 20%; 
+}
+
+#hebergements_marseille .Afficher_plus
+{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+/* Les plus populaires 2nd part - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN*/
+.les_plus_populaires
+{
+    width: 30%;
+    height: 60%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+.les_plus_populaires figure 
+{
+    width: 90%;
+    height: 180px;
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+
+.les_plus_populaires img 
+{
+    height: 100%;
+    width: 45%;
+    min-width: 45%;
+}
+
+.les_plus_populaires figcaption
+{
+    width: 180px;
+    height: 100%;
+    max-height: 30%;
+    min-height: 30%;
+}
+
+.les_plus_populaires .fa-star
+{
+    margin-top: 30%;
+}
+
+.entetepop
+{
+    margin-bottom: 5%;
+}
+
+/* Activités à Marseille part - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN*/
+#activites
+{
+    width: 100%;
+    justify-content: none;
+    font-size: 1.2em;
+}
+
+#activites img 
+{
+    width: 100%;
+}
+
+#activites .vieux_port
+{
+    width: 440px;
+    height: 630px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.vieux_port img
+{
+    width: 440px;
+    height: 570px;
+    object-fit: cover;
+}
+
+#activites .pomegues
+{
+    width: 440px;
+    height: 340px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.pomegues img
+{
+    width: 440px;
+    height: 280px;
+    object-fit: cover;
+}
+
+#activites .frioul
+{
+    width: 440px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.frioul img
+{
+    width: 440px;
+    height: 190px;
+    object-fit: cover;
+}
+
+#activites .parc_national
+{
+    width: 440px;
+    height: 630px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.parc_national img
+{
+    width: 440px;
+    height: 570px;
+    object-fit: cover;
+}
+
+#activites .notre_dame
+{
+    width: 440px;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.notre_dame img
+{
+    width: 440px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#activites .longchamp
+{
+    width: 440px;
+    height: 330px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.longchamp img
+{
+    width: 440px;
+    height: 270px;
+    object-fit: cover;
+}
+
+#activites h3
+{
+    padding-left: 10px;
+}
+
+#activites h2 
+{
+    margin-bottom: 2%;
+}
+
+/*footer - RESPONSIVE DESIGN EXTRA X2 LARGE SCREEN*/
+footer 
+{
+    padding-left: 8%;
+    font-size: 1.2em;
+}
+
+footer div 
+{
+    width: 40%;
+}
+
+}
+/*----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+--------------------RESPONSIVE DESIGN EXTRA LARGE SCREEN------------------------------------------------*/
+@media all and (min-width: 1901px) and (max-width: 2150px)
+{
+
+body 
+{
+    font-size: 1.5em;  
+}
+
+/*all the page without header and footer - RESPONSIVE DESIGN EXTRA LARGE SCREEN */ 
 main 
 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-/* header - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
+/* header (Logo + Nav) - RESPONSIVE DESIGN EXTRA LARGE SCREEN */
 header
 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-/* Nav - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */ 
+#logo
+{
+    width: 8%;/*150px;*/ 
+    height: 5%; /*80px;*/
+}
+
+/* Nav (=menu) - RESPONSIVE DESIGN EXTRA LARGE SCREEN */ 
+nav ul/* nav */
+{
+    width: 600px;
+}
+
+a[href^="#hebergements_marseille"] 
+{
+    font-family: 'ralewaylight','ralewayregular',serif;
+    color: black;
+    padding: 27px 0px 0px 0px;
+}
+
+a[href^="#activites"] 
+{
+    font-family: 'ralewaylight','ralewayregular',serif;
+    color: black;
+    padding: 27px 0px 0px 0px;
+}
 
 a[href^="#hebergements_marseille"]:hover /* change appaerance on hover*/
 {
@@ -712,24 +1077,368 @@ a[href^="#activites"]:hover /* change appaerance on hover*/
     color: #0065FC;
 }
 
-/* Form - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */ 
+/* Form -RESPONSIVE DESIGN EXTRA LARGE SCREEN */ 
+form
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width:  60%; /*500px*/
+}
 
+form i 
+{
+    width: 100px;
+    height: 30px;
+    padding-bottom: 16px;
+    padding-top: 14px;
+}
+
+#free_search
+{
+    width: 280px;
+    height: 60px;
+}
+
+#button_search
+{
+    width: 150px; 
+    height: 60px;
+}
+
+/* Filters - RESPONSIVE DESIGN EXTRA LARGE SCREEN*/ 
+.filtre
+{
+    height: 60px;
+    margin-left: 50px;
+    padding-right: 25px;
+}
+
+.filtre i
+{
+    width: 40px;
+    height: 45px;
+}
+
+/* Info part (icon i + info sentence) - RESPONSIVE DESIGN EXTRA LARGE SCREEN */ 
+#info i 
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    padding: 8px 12px 15px 12px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+
+#info
+{
+    align-items: baseline;
+}
+
+/*hebergement à Marseille 1st part - RESPONSIVE DESIGN EXTRA LARGE SCREEN */
+#hebergements_marseille
+{
+    width: 1250px;
+    height: 850px;
+    padding-top:50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hebergements_marseille img
+{
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#hebergements_marseille figure
+{
+    width: 315px;
+    height: 250px;
+    margin-bottom: 20px; 
+    margin-top: 0px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+#hebergements_marseille .fa-star
+{
+    width: 15px;
+}
+
+#hebergements_marseille h2
+{
+    font-size: 1.2em; 
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
+#hebergements_marseille .Afficher_plus
+{
+    margin-bottom: 30px;
+    font-size: 1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Les plus populaires 2nd part - RESPONSIVE DESIGN EXTRA LARGE SCREEN*/
+.les_plus_populaires
+{
+    padding: 50px 25px 0px 25px;
+    width: 550px;
+    height: 850px;
+}
+
+.les_plus_populaires figure
+{
+    margin-bottom: 30px;
+    width: 500px;
+    height: 200px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+.les_plus_populaires figcaption
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1em;
+    width: 200px;
+}
+
+.les_plus_populaires .fa-star
+{
+    margin-top: 70px;
+    width: 15px;
+}
+
+.les_plus_populaires img
+{
+    width: 220px;
+    min-width: 220px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.entetepop 
+{
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+/* Activités à Marseille part - RESPONSIVE DESIGN EXTRA LARGE SCREEN*/
+#activites 
+{
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#activites img
+{
+    width: 400px;
+}
+
+#activites h2
+{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+#activites .vieux_port
+{
+    width: 400px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.vieux_port img
+{
+    width: 400px;
+    height: 470px;
+    object-fit: cover;
+}
+
+#activites .pomegues
+{
+    width: 400px;
+    height: 290px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.pomegues img
+{
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+}
+
+#activites .frioul
+{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.frioul img
+{
+    width: 400px;
+    height: 140px;
+    object-fit: cover;
+}
+
+#activites .parc_national
+{
+    width: 400px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.parc_national img
+{
+    width: 400px;
+    height: 470px;
+    object-fit: cover;
+}
+
+#activites .notre_dame
+{
+    width: 400px;
+    height: 210px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.notre_dame img
+{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#activites .longchamp
+{
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
+    -moz-box-shadow: 1px 1px 8px #bfbfbf;
+    -webkit-box-shadow: 1px 1px 8px #bfbfbf;
+}
+
+.longchamp img
+{
+    width: 400px;
+    height: 220px;
+    object-fit: cover;
+}
+
+#activites h3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*footer - RESPONSIVE DESIGN EXTRA LARGE SCREEN*/
+footer
+{
+    padding-left: 100px;
+    font-size: 1.2em;
+}
+
+footer div 
+{
+    width: 50%;
+    margin-right: 0px;
+    padding-right: 300px;
+}
+
+}
+/*----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+--------------------RESPONSIVE DESIGN LARGE SCREEN------------------------------------------------*/
+@media all and (min-width: 1200px) and (max-width: 1900px)
+{
+
+/* All the page - RESPONSIVE DESIGN LARGE SCREEN */
+body 
+{
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1.2em;  
+}
+
+/*all the page without header and footer - RESPONSIVE DESIGN LARGE SCREEN */ 
+main 
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* header (logo + nav) - RESPONSIVE DESIGN LARGE SCREEN */
+header
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Nav (=menu) - RESPONSIVE DESIGN LARGE SCREEN */ 
+nav ul/* nav */
+{
+    width: 400px;
+}
+
+a[href^="#hebergements_marseille"]:hover /* change appaerance on hover*/
+{
+    border-top: 4px solid #0065FC;
+    color:#0065FC;
+}
+
+a[href^="#activites"]:hover /* change appaerance on hover*/
+{
+    border-top: 4px solid #0065FC;
+    color: #0065FC;
+}
+
+/* Form - RESPONSIVE DESIGN LARGE SCREEN */ 
 form
 {
     display: inline-flex;
     flex-wrap: nowrap;
     align-items:center;
     text-align:center;
-    /*border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-size: 2em;
-    padding:0px;
-    margin-top: 10px;
-    margin-bottom: 10px;*/
 }
+
 form i
 {
-    /*width: 50px; */
     height: 35px;
     padding: 12px 4px 0px 4px;
     font-size: 0.6em;
@@ -743,28 +1452,17 @@ form i
     
     width: 200px;
     height: 50px;
-    
     font-size: 0.5em;
-    /*padding: 10px 6px 10px 6px;*/
     border: 1px solid #F2F2F2;
 }
 
 #button_search
 {   
-    /*background-color: #0065FC;
-    color: white;*/
     width: 120px;
-    height: 50px;
-    /*font-family: 'ralewaysemibold','ralewaylight','ralewayregular',serif;
-    font-size: 0.5em;
-    padding: 11px 6px 10px 6px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;*/
-    
+    height: 51px;
 }
 
-/* filters - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */ 
-
+/* filters - RESPONSIVE DESIGN LARGE SCREEN */ 
 #filtres h2
 {
     font-size: 0.9em;
@@ -780,35 +1478,62 @@ form i
     height: 50px;
     padding-right: 25px;
     padding-left: 0px;
+    margin-right: 20px;
 }
 
-/*hebergement à Marseille 1st part - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
+/* Info part (icon i + info sentence) - RESPONSIVE DESIGN LARGE SCREEN */ 
+#info i 
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    padding: 5px 7px 10px 7px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+
+#info
+{
+    align-items: baseline;
+}
+
+
+/* Gather Hebergement à Marseille part + Les plus populaires part - RESPONSIVE DESIGN LARGE SCREEN */
+.hebergements_populaires
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:100%;
+}
+
+/* Hebergement à Marseille 1st part - RESPONSIVE DESIGN LARGE SCREEN */
 #hebergements_marseille
 {
-    width: 800px;
+    width: 900px;
     height: 550px;
 }
 
 #hebergements_marseille figure
 {
-    width: 220px;
-    height: 160px;
+    width: 250px;
+    height: 180px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 #hebergements_marseille img
 {
-    height: 90px;
+    height: 110px;
 }
 
 #hebergements_marseille h2
 {
     padding-left: 15px;
 }
-}
 
-/* les plus populaires 2nd part - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
+/* les plus populaires 2nd part - RESPONSIVE DESIGN LARGE SCREEN */
 .les_plus_populaires
 {
     background-color: #F2F2F2;
@@ -825,6 +1550,11 @@ form i
     height: 120px;
 }
 
+.les_plus_populaires figcaption
+{
+    width: 140px;
+}
+
 .les_plus_populaires img
 {
     width: 120px;
@@ -833,99 +1563,100 @@ form i
 
 .entetepop 
 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 25px;
 }
 
-/* Activités à Marseille - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
+/* Activités à Marseille - RESPONSIVE DESIGN LARGE SCREEN */
 #activites img
 {
-    width: 250px; 
+    width: 300px; 
 }
 
 #activites .vieux_port
 {
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     margin: 0px;
     padding: 0px;
 }
 
 .vieux_port img
 {
-    width: 100%;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: 0px;
+    padding: 0px;
 }
 
 #activites .pomegues
 {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     margin: 0px 0px 30px 0px;
 }
 
 .pomegues img
 {
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     margin: 0px;
 }
 
 #activites .frioul
 {
-    width: 250px;
-    height: 120px;
+    width: 300px;
+    height: 170px;
     margin: 0px;
 }
 
 .frioul img
 {
-    width: 250px;
-    height: 70px;
+    width: 300px;
+    height: 120px;
     margin: 0px;
 }
 
 #activites .parc_national
 {
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     margin: 0px;
 }
 
 .parc_national img
 {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: 0px;
 }
 
 #activites .notre_dame
 {
-    width: 250px;
-    height: 140px;
+    width: 300px;
+    height: 190px;
     margin: 0px;
     margin: 0px 0px 30px 0px;
 }
 
 .notre_dame img
 {
-    width: 250px;
-    height: 90px;
+    width: 300px;
+    height: 140px;
     margin: 0px;
 }
 
 #activites .longchamp
 {
-    width: 250px;
-    height: 180px;
+    width: 300px;
+    height: 230px; 
     margin: 0px;
 }
 
 .longchamp img
 {
-    width: 250px;
-    height: 130px;
+    width: 300px;
+    height: 180px;
     margin: 0px;
 }
 
@@ -934,36 +1665,43 @@ form i
     padding-left: 10px;
 }
 
-/* footer - RESPONSIVE DESIGN DESKTOPS AND LAPTOPS */
+/* footer - RESPONSIVE DESIGN LARGE SCREEN */
 footer
 {
-    padding: 30px 0px 30px 50px;
+    padding-left: 50px;
+}
+
+footer div 
+{
+    width: 50%;/*200px;*/
+    margin-right: 0px;
+    padding-right: 200px;
 }
 
 }
 /*----------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
---------------------RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) ------------------------------------------*/
+----------RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN -----------------------------------*/
 
-@media all and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px)
+@media all and (min-width: 1000px) and (max-width: 1400px)
 {
 
-/* header - RESPONSIVE DESIGN TABLET / LANDSCAPE LAYOUT */
+/* header (logo + nav) - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */
 header
 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/*all the page without header and footer - RESPONSIVE DESIGN TABLET / LANDSCAPE LAYOUT */ 
+/*all the page without header and footer - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */ 
 main 
 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/* Nav- RESPONSIVE DESIGN TABLET / LANDSCAPE LAYOUT */
+/* Nav (=menu) - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */
 
 /*nav ul
 {
@@ -976,8 +1714,8 @@ main
     color: #0065FC;
     font-family: 'ralewaysemibold','ralewaylight','ralewayregular',serif;
     font-size: 0.8em;
-    padding: 0px 10px 0px 10px; */
-}  
+    padding: 0px 10px 0px 10px;
+}  */
 
 a[href^="#hebergements_marseille"] 
 {
@@ -1005,71 +1743,199 @@ a[href^="#activites"]:hover /* change appaerance on hover*/
     color: #0065FC;
 }
 
+/* Info part (icon + info sentence) - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */ 
+#info i 
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    padding: 5px 7px 9px 7px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
 }
 
+#info
+{
+    align-items: baseline;
+}
 
+/* Hebergement à Marseille 1st part - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */ 
+#hebergements_marseille figure
+{
+    width: 170px;
+}
 
+/* Les plus populaires 2nd part - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */
+.les_plus_populaires
+{
+    width: 350px;
+}
+
+/* Activités à Marseille - RESPONSIVE DESIGN TABLET (LANDSCAPE LAYOUT) / CLASSIC SCREEN */
+#activites img
+{
+    width: 220px; 
+}
+
+#activites .vieux_port
+{
+    width: 220px;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.vieux_port img
+{
+    width: 220px;
+    height: 360px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#activites .pomegues
+{
+    width: 220px;
+    height: 220px;
+    margin: 0px 0px 30px 0px;
+}
+
+.pomegues img
+{
+    width: 220px;
+    height: 180px;
+    margin: 0px;
+}
+
+#activites .frioul
+{
+    width: 220px;
+    height: 150px;
+    margin: 0px;
+}
+
+.frioul img
+{
+    width: 220px;
+    height: 110px;
+    margin: 0px;
+}
+
+#activites .parc_national
+{
+    width: 220px;
+    height: 400px;
+    margin: 0px;
+}
+
+.parc_national img
+{
+    width: 220px;
+    height: 360px;
+    margin: 0px;
+}
+
+#activites .notre_dame
+{
+    width: 220px;
+    height: 160px;
+    margin: 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+.notre_dame img
+{
+    width: 220px;
+    height: 120px;
+    margin: 0px;
+}
+
+#activites .longchamp
+{
+    width: 220px;
+    height: 210px; 
+    margin: 0px;
+}
+
+.longchamp img
+{
+    width: 220px;
+    height: 170px;
+    margin: 0px;
+}
+
+#activites h3
+{
+    padding-left: 10px;
+}
+
+footer div
+{
+    width: 30%;
+}
+
+}
 /*----------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
---------------------RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT--------------------------------------------*/
-
-@media all and (orientation:portrait) and (min-device-width: 768px) and (max-device-width: 1024px)
+----------RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT)--------------------------*/
+@media all and (min-width: 480px) and (max-width: 1000px)
 {
+
 body
 {
     width: 100%;
 }
 
-/* header - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
-header
-{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* Nav- RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
-
-a[href^="#hebergements_marseille"] 
-{
-    font-family: 'ralewaylight','ralewayregular',serif;
-    color: black;
-    padding: 27px 0px 0px 0px;
-}
-
-a[href^="#activites"] 
-{
-    font-family: 'ralewaylight','ralewayregular',serif;
-    color: black;
-    padding: 27px 0px 0px 0px;
-}
-
-a[href^="#hebergements_marseille"]:hover /* change appaerance on hover*/
-{
-    border-top: 4px solid #0065FC;
-    color:#0065FC;
-}
-
-a[href^="#activites"]:hover /* change appaerance on hover*/
-{
-    border-top: 4px solid #0065FC;
-    color: #0065FC;
-}
-
-/*all the page without header and footer - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */ 
+/*all the page without header and footer - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */ 
 main 
 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/*Form - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
+/* header (logo + nav) - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
+header
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Nav (=menu) - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
+a[href^="#hebergements_marseille"] 
+{
+    font-family: 'ralewaylight','ralewayregular',serif;
+    color: black;
+    padding: 27px 0px 0px 0px;
+}
+
+a[href^="#activites"] 
+{
+    font-family: 'ralewaylight','ralewayregular',serif;
+    color: black;
+    padding: 27px 0px 0px 0px;
+}
+
+a[href^="#hebergements_marseille"]:hover /* change appaerance on hover*/
+{
+    border-top: 4px solid #0065FC;
+    color:#0065FC;
+}
+
+a[href^="#activites"]:hover /* change appaerance on hover*/
+{
+    border-top: 4px solid #0065FC;
+    color: #0065FC;
+}
+
+/*Form - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
 form 
 {
     width: auto;
 }
 
-/* filters - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */ 
+/* Filters - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */ 
 #filtres
 {
     font-size: 0.8em;
@@ -1087,7 +1953,24 @@ form
     padding: 15px 10px 10px 10px;
 }
 
-/* Articles & sections - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
+/* Info part (icon + sentence) - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
+#info i 
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    padding: 4px 5px 6px 5px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+
+#info
+{
+    align-items: baseline;
+}
+
+/* Gather Hebergement à Marseille part + Les plus populaires part - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
 .hebergements_populaires
 {
     width: 100%;
@@ -1099,7 +1982,7 @@ form
     margin-right: 0px;
 }
 
-/* les plus populaires 1st part - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
+/* les plus populaires 1st part- RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT)*/
 .entetepop 
 {
     width: 100%;
@@ -1144,7 +2027,7 @@ form
     margin:0px;
 }
 
-/*hebergement à Marseille 2nd part - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
+/*hebergement à Marseille 2nd part - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
 #hebergements_marseille
 {
     width: auto;
@@ -1180,7 +2063,7 @@ form
     padding-top: 0px;
 }
 
-/* Activités à Marseille - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT*/
+/* Activités à Marseille - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
 #activites 
 {
     width: auto;
@@ -1199,15 +2082,15 @@ form
 
 #activites .vieux_port
 {
-    width: 150px;
+    width: 170px;
     height: 350px;
     margin: 1px;
 }
     
 #activites .vieux_port img 
 {
-    width: 150px;
-    height: 300px;
+    width: 170px;
+    height: 310px;
 }
 
 #activites .pomegues
@@ -1221,7 +2104,7 @@ form
 #activites .pomegues img 
 {
     width: 180px;
-    height: 150px;
+    height: 160px;
 }
 
 #activites .frioul 
@@ -1234,20 +2117,20 @@ form
 #activites .frioul img 
 {
     width: 180px;
-    height: 80px;
+    height: 90px;
 }
 
 #activites .parc_national
 {
-    width: 150px;
+    width: 170px;
     height: 350px;
     margin: 1px;
 }
 
 #activites .parc_national img 
 {
-    width: 150px;
-    height: 300px;
+    width: 170px;
+    height: 310px;
 }
 
 #activites .notre_dame 
@@ -1261,7 +2144,7 @@ form
 #activites .notre_dame img 
 {
     width: 180px;
-    height: 100px;
+    height: 110px;
 }
 
 #activites .longchamp
@@ -1274,25 +2157,31 @@ form
 #activites .longchamp img 
 {
     width: 180px;
-    height: 120px;
+    height: 140px;
 }
 
-/* footer - RESPONSIVE DESIGN TABLET / PORTRAIT LAYOUT */
+/* footer - RESPONSIVE DESIGN TABLET (PORTRAIT LAYOUT) / MOBILE (lANDSCAPE LAYOUT) */
 footer 
 {
     width: auto;
 }
 
 }
-
 /*----------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 -------------------RESPONSIVE DESIGN MOBILE---------------------------------------------------------------*/
-
-@media all and (min-device-width: 320px) and (max-device-width: 480px)
-
+@media all and (min-width: 319px) and (max-width: 480px)
 {
+
+/* All the page - RESPONSIVE DESIGN MOBILE*/
+body
+{
+    flex-direction: column;
+    /*width: auto;*/
+    padding: 0px;
+    margin: 0px;
+}
 
 *
 {
@@ -1300,31 +2189,38 @@ footer
     padding: 0px;
 }
 
-body
+/*all the page without header and footer - RESPONSIVE DESIGN MOBILE */ 
+main 
 {
-    flex-direction: column;
-    width: 100%;
+    /*width: 100%;*/
+    padding: 0px;
+    margin: 0px;
 }
 
 /*header (logo + nav) - RESPONSIVE DESIGN MOBILE*/ 
 header
 {
-    width:auto;
+    /*width: 100%;*/
+    height: auto;
     display: flex;
+    flex-direction: column;
     font-size: 1.2em;
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
+    margin-top: 40px;
 }
 
 #logo
 {
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
+/* Nav (=menu) - RESPONSIVE DESIGN MOBILE */ 
 nav ul 
 {
-    width: 100%;
+    width: auto;
     padding: 0px;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap-reverse;
     text-align: center;
@@ -1332,60 +2228,47 @@ nav ul
 
 li:nth-child(-n+2) /* Activites + hebergements nav */
 {
-    display: block;
+    flex-direction: row;
     flex-wrap: nowrap;
-    border:none;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #bfbfbf;
+    padding-bottom: 10px;
+    margin: 0px;
 }
 
-a[href^="#hebergements_marseille"]
+li:nth-child(-n+2):hover
 {
-    width: auto;
-    text-align: center;
-    margin-right:0px;
-    margin-left: 0px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right:40px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #bfbfbf;
+ text-decoration: none;
+ border-top: none; 
+ border-bottom: 2px solid #0065FC;
 }
 
-a[href^="#activites"]
+
+a[href^="#hebergements_marseille"]:hover /* to cancel the blue top border*/ 
 {
-    width: auto;
-    text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 40px;
-    padding-left: 62px;
-    padding-right: 62px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #bfbfbf;
+    border-top: none; 
+
 }
+
+a[href^="#activites"]:hover /* to cancel the blue top border*/ 
+{
+    border-top: none;
     
-a[href^="#hebergements_marseille"]:hover 
-{
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
-}
-
-a[href^="#activites"]:hover
-{
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
 }
     
 ul li:nth-last-child(1) /* "s'inscrire" block */
 {
-    width: 100%;
-    text-align: end;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    margin-top: -80px;
-    margin-bottom: 2px;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+    padding: 0px 0px 20px 0px;
+    margin-top: -50px;
+    margin-bottom: 10px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 65%;
+    position: absolute;
 }
 
 /* Header sentences - RESPONSIVE DESIGN MOBILE */  
@@ -1399,39 +2282,43 @@ ul li:nth-last-child(1) /* "s'inscrire" block */
 
 #en_tete p
 {
-    width: auto;
+    max-width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    font-size: 1em;
+    padding-left: 15px;
+    font-size: 0.8em;
 }
 
 /*Form - RESPONSIVE DESIGN MOBILE */
 form 
 {
-    width: 250px;
+    width: 80%;
     height: 45px;
-    margin: 20px;
-    padding: 0px 0px 0px 0px;
+    margin-top: 20px; 
+    padding: 0px 0px 0px 30px;
     border-radius: 20px;
-    align-items: none;
+    align-items: center;
+    
 }
 
-form i 
+form i
 {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    padding: 12px 15px 8px 15px;
-    width: 30px;
-    height: 28px;
+    width: 15%;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    align-items: center;
+    justify-content: center;
 }
 
 #free_search
 {
     width: 200px;
-    height: 48px;
+    height: 50px;
     border: 2px solid #F2F2F2;
-   
+    position: absolute; 
 }
 
 #button_search
@@ -1441,15 +2328,19 @@ form i
 
 .research i
 {
-    display: inline-block;
-    /*display:flex;
-    float: right;*/
-    /*align-items: center;
-    justify-content: center;*/
+    display:flex;
+    /*float: right;*/
+    align-items: center;
+    justify-content: center;
     background-color: #0065FC;
     color: white;
     font-size: 0.6em;
     border-radius: 12px;
+    z-index: 1;
+    margin-left: 180px; 
+    width: 20px;
+    height: 50px;
+    padding:0px 15px 0px 15px;
 }
    
 /*filters - RESPONSIVE DESIGN MOBILE */
@@ -1457,7 +2348,6 @@ form i
 {
     width: auto;
     flex-wrap:wrap;
-    width: auto;
     height: auto;
     margin: 10px 0px 5px 0px;
     padding: 10px 0px 20px 0px;
@@ -1467,18 +2357,23 @@ form i
     
 #filtres h2
 {
-    width: 100%;
     display: flex;
     align-items: flex-start;
     padding-left: 20px;
+    padding-right: 60%;
     margin-bottom: 20px;
 }
 
 #filtres h3
 {
-    width: 100%;
+    width: auto;
 }
 
+.filtres_part1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 .filtre
 {
     width: auto;
@@ -1492,13 +2387,14 @@ form i
     width: auto;
     height: 30px;
     padding: 15px 16px 5px 16px;
-}
+}  
 
-/* info part - RESPONSIVE DESIGN MOBILE */   
+/* info part - sentence - RESPONSIVE DESIGN MOBILE */ 
 #info
 {
     width: auto;
     margin: 20px;
+    text-align: left;
 }
    
 #info p
@@ -1508,14 +2404,20 @@ form i
 
 #info i
 {
-    height: 40%;
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    padding: 6px 8px 6px 8px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bfbfbf;
 }
 
-/* Articles & sections - RESPONSIVE DESIGN MOBILE */ 
+/* Gather Hebergement à Marseille part + Les plus populaires part - RESPONSIVE DESIGN MOBILE */ 
 .hebergements_populaires
 {
     flex-direction:column-reverse;
-    width: auto;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -1529,6 +2431,7 @@ form i
     padding: 10px 0px 20px 0px;
     font-size: 1.4em;
     border-radius:0px;
+    background-color: #F2F2F2;
 }
 
 .les_plus_populaires figure
@@ -1581,8 +2484,9 @@ form i
     
 #hebergements_marseille h2
 {
-    margin: 20px 0px 30px 20px;
-    padding-left: 0px;
+    width: 90%;
+    margin: 20px 0px 30px 0px;
+    padding-left: 5%;
 }
 
 #hebergements_marseille img
@@ -1598,7 +2502,7 @@ form i
     width: auto;
     height: 200px;
     padding: 5px;
-    margin: 0px 40px 20px 20px;
+    margin-bottom: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #bfbfbf; /* darker than F2F2F2 to see it*/ 
@@ -1614,29 +2518,29 @@ form i
 
 #hebergements_marseille .Afficher_plus
 {
-    margin-left: 20px;
-    padding-left: 0px;
+    width: 80%;
+    padding-left: 30px;
 }
 
 /*Activités à Marseille - RESPONSIVE DESIGN MOBILE */ 
 #activites
 {
     flex-direction: column;
-    width: auto;
+    width: 100%;
     font-size: 1.4em;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 10px 0px 20px 0px;
 }
 
 #activites h2
 {
-    margin: 20px 0px 30px 20px;
-    padding-left: 0px;
+    width: 80%;
+    padding-left: 5%;
 }
 
 #activites .vieux_port
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1649,7 +2553,7 @@ form i
 
 #activites .pomegues
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1660,10 +2564,9 @@ form i
     -webkit-box-shadow: 1px 1px 8px #bfbfbf;
 }
 
-
 #activites .frioul
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1676,7 +2579,7 @@ form i
 
 #activites .parc_national
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1686,11 +2589,10 @@ form i
     -moz-box-shadow: 1px 1px 8px #bfbfbf;
     -webkit-box-shadow: 1px 1px 8px #bfbfbf;
 }
-
 
 #activites .notre_dame
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1701,10 +2603,9 @@ form i
     -webkit-box-shadow: 1px 1px 8px #bfbfbf;
 }
 
-
 #activites .longchamp
 {
-    width: auto;
+    width: 90%;
     height: 200px;
     padding: 0px;
     margin: 0px 40px 20px 20px;
@@ -1734,12 +2635,12 @@ footer
     flex-direction: column;
     width: auto;
     font-size: 1.4em;
-    
+    margin: 0px;
 }
 
 footer div 
 {
-    width: 100%;
+    width: auto;
     margin-bottom: 20px;
     line-height: 2em;
 }
